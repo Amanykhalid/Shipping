@@ -23,22 +23,6 @@
     <section class="content">
       <div class="row">
         <div class="col-12">
-          {{-- @if (count($errors) > 0)
-          <div class="alert alert-info">
-           <button type="button" class="close" data-dismiss="alert">×</button>
-           <ul>
-            @foreach ($errors->all() as $error)
-             <li>{{ $error }}</li>
-            @endforeach
-           </ul>
-          </div>
-         @endif
-         @if ($message = Session::get('success'))
-         <div class="alert alert-success alert-block">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-                 <strong>{{ $message }}</strong>
-         </div>
-         @endif --}}
             <div class="card card-primary">
                 <div class="card-header">
                   <h3 style="float: right;" class="card-title">اضافة  لغة</h3>

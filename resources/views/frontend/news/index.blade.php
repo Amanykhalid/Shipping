@@ -10,7 +10,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="/admin">الاخبار</a></li>
+              <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
               <li class="breadcrumb-item active">عرض جميع الاخبار</li>
             </ol>
           </div>
@@ -28,6 +28,10 @@
          
             <!-- /.card-header -->
             <div class="card-body">
+
+              @include('frontend.includes.alerts.success')
+              @include('frontend.includes.alerts.errors')
+
               <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
               <a style="display: inline" href="/admin/pages/create" class="btn btn-xs btn-primary">اضف جديد</a>
 
@@ -43,6 +47,7 @@
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 150.2px;"> الصورة</th>
                     <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 201px;"> العنوان </th>
                     <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 201px;"> النوع </th>
+                    <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 201px;"> الحالة </th>
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 244.2px;">الاجرائات </th>
                 </tr></thead>
                 <tbody>
@@ -52,18 +57,22 @@
                   <td> <img src="{{asset('images/'.$page->image_short)}}" height="100px" width="100px" alt=""></td>
                   <td class="sorting_1"> {{$page->title}}</td>
                   <td class="sorting_1"> {{$page->type}}</td>
+                  <td>{{ $page->status == 1 ? 'مفعل'  : 'غير مفعل' }}</td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                       <form action="user/edit" style="display :inline" method="POST">
-                           
-                            <button style="margin-left:5px" type="submit" class="btn btn-xs btn-primary" name="edit" value="Delete">تعديل</button>
-                        </form>
+                      <a href="{{route('pages.edit',$page->id)}}" class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
                         <form action="{{route('pages.destroy',$page->id)}}" style="display :inline" method="POST">
                           @method('delete')
                           @csrf
-                             
-                            <button type="submit" class="btn btn-xs btn-danger" name="delete" value="Delete">حذف</button>
+                            <button type="submit" class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1" name="delete" value="Delete">حذف</button>
                         </form>
+                        <a href="{{route('pages.status',$page->id)}}" class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
+                          @if($page ->status == 0)
+                          تفعيل
+                          @else
+                          الغاء تفعيل
+                          @endif
+                        </a>
                     </div>
                   </td>
                 </tr>

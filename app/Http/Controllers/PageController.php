@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PageRequest;
 use App\Page;
 use App\Lang;
 use Illuminate\Http\Request;
@@ -39,9 +40,8 @@ class PageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $req)
+    public function store(PageRequest $req)
     {
-        //
         try
         {
           $req_all = $req->except('image_short','image_long'); 
@@ -77,9 +77,15 @@ class PageController extends Controller
      * @param  \App\Page  $page
      * @return \Illuminate\Http\Response
      */
-    public function edit(Page $page)
+    public function edit($id)
     {
-        //
+        $page=Page::find($id);
+        // dd($page);
+        if (!$page)
+            return redirect()->route('pages.index')->with(['error' => 'هذه الصفحة غير موجود ']);
+
+        return view('frontend.news.edit',compact('page'))->with('langs',Lang::where('status',1)->where('deleted',0)->get());;
+
     }
 
     /**
@@ -89,9 +95,34 @@ class PageController extends Controller
      * @param  \App\Page  $page
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Page $page)
+    public function update(PageRequest $req,$id)
     {
         //
+        try
+        {
+            $page=Page::find($id);
+
+            if (!$page)
+                return redirect()->route('sliders.index')->with(['error' => 'هذه الصفحة غير موجود ']);
+
+            $req_all = $req->except(['image_short','pageId','image_long']);
+            if($req->image_short != null)
+            {
+                $path=  $req->image_short->store('pages');
+                $req_all['image_short'] = $path;
+            }
+            if($req->image_long != null)
+            {
+                $path2=  $req->image_long->store('pages');
+                $req_all['image_long'] = $path2;
+            }
+            $page->update($req_all);
+            return redirect()->route('pages.index')->with(['success' => ' تم تعديل  الصفحة بنجاح ']);
+        }
+        catch(\Exception $ex)
+        {
+            return redirect()->route('pages.index')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
+        }
     }
 
     /**
@@ -114,4 +145,27 @@ class PageController extends Controller
     
             } 
     }
+
+     // change Page Status
+     public function changStatus($id)
+     {
+         try
+         {
+             $page = Page::find($id);
+             if (!$page)
+                 return redirect()->route('pages.index')->with(['error' => 'هذه الصفحة غير موجود ']);
+ 
+             $status =  $page->status  == 0 ? 1 : 0;
+ 
+             $page->update(['status' =>$status ]);
+ 
+             return redirect()->route('pages.index')->with(['success' => ' تم تغيير الحالة بنجاح ']);
+         }
+         catch (\Exception $ex)
+         {
+             return redirect()->route('pages.index')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
+         }
+     }
+
+
 }

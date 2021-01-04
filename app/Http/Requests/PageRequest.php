@@ -26,17 +26,24 @@ class PageRequest extends FormRequest
         return [
             'title' => 'required|string',
             'name' => 'required|string',
-            'image_short' => 'required|string',
-            'image_long' => 'required|string',
+            'image_short' => 'required_without:pageId|mimes:jpg,jpeg,png',
+            'image_long' => 'required_without:pageId|mimes:jpg,jpeg,png',
             'meta' => 'required|string',
             'des_short' => 'required|string',
             'des_long' => 'required|string',
             'button_title' => 'required|string',
-            'des_short' => 'required|string',
-
-
-            'image' => 'required_without:sliderId',
+            'button_link' => 'required|string',
+            'type'=>'required',
             'lang'=>'required'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'required' => 'هذا الحقل مطلوب',
+            'string' => '= هذا الحقل  لابد ان يكون احرف',
+            'mimes'  =>'هذا الحقل لابد ان يكون صورة ',
         ];
     }
 }

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>REFORM – The Palestinian Association for Empowerment and Local Development</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://reform.ps/wp-content/uploads/cropped-reform-favicon-192x192.png" rel="icon">
+  <link href="https://reform.ps/wp-content/uploads/cropped-reform-favicon-192x192.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eolivx - v2.2.0
+  * Template URL: https://bootstrapmade.com/eolivx-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><img src="https://reform.ps/wp-content/uploads/reform-logo-new-white-RGB.svg"  alt=""></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="https://reform.ps/wp-content/uploads/reform-logo-new-white-RGB.svg" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#">Contact</a></li>
+          <div style="
+              float: right;
+    margin-right: -154px;">
+          <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+            login</a></li>
+        </div>
+      </nav><!-- .nav-menu -->
+     
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Slider Section ======= -->
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        <img src="assets/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+        <img src="assets/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
+        <img src="assets/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+      </div>
+
+      <!-- direction 1 -->
+      <div id="slider-direction-1" class="slider-direction slider-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow animate__slideInDown animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">AT REFORM WE BELIEVE</h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow animate__fadeIn animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h1 class="title2">…that everyone has the right to participate effectively
+                    in a pluralistic environment.</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 2 -->
+      <div id="slider-direction-2" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content text-center">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">AT REFORM WE BELIEVE </h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow animate__fadeIn animate__animated" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">…that everyone has the right to participate effectively
+                    in a pluralistic environment</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- direction 3 -->
+      <div id="slider-direction-3" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">AT REFORM WE BELIEVE </h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow animate__fadeIn animate__animated" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">…that everyone has the right to participate effectively
+                    in a pluralistic environment</h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow animate__slideInUp animate__animated" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Slider -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="about-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>WE PROVIDE SUSTAINABLE INTERVENTIONS FOR</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="https://reform.ps/wp-content/uploads/rap_power-team.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">EMPOWERING SOCIAL GROUPS</h4>
+                </a>
+                <p>
+                  Welcome at REFORM – The Palestinian Association for Empowerment and Local Development.  We are committed to provide sustainable interventions for empowering social groups within the Palestinian Society. We seek to contribute to the formation of a fairer society where women and youth take leading roles in public life and governing bodies. 
+                </p>
+                <a href="#">
+                  <h4 class="sec-head">INITIATING CHANGE
+                  </h4>
+                </a>
+                <p>
+                  REFORM’s Social Transformation program teaches participants and community members to deal with differences. The participants learn to at least see the value of listening to voices that do not necessarily represent their own views. This leads to increased social cohesion and solidarity between the different Palestinian social components.                </p>
+              
+              </div>
+              <a href="#" style="border: 1px solid #000;color: black;margin-top: 0;margin-left: 30%;" class="ready-btn scrollto">Find Out more</a>            </div>
+          </div>
+          <!-- End col-->
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services" class="services-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline services-head text-center">
+              <h2>OUR STORY</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <!-- Start Left services -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-heart-o fa-3x"></i>
+                  </a>
+                  <h4>VISION & MISSION</h4>
+                  <p>
+                    Vision transforms purpose into action! We strive for a society where women & youth take leading roles in public life and everyone has the capacity to participate effectively.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-repeat fa-3x"></i>
+                  </a>
+                  <h4>THEORY OF CHANGE</h4>
+                  <p>
+                    It is only possible to transform conflict through shifting or transcending culture and structure The objective is finding positive goals that meet all parties’ needs.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-users fa-3x"></i>
+                  </a>
+                  <h4>OUR TEAM</h4>
+                  <p>
+                    We are thinkers & doers, movers & shakers – above all, we provide sustainable interventions for empowering social groups within the Palestinian Society.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-pencil-square-o fa-3x"></i>
+                  </a>
+                  <h4>WHAT WE DO</h4>
+                  <p>
+                    Innovation is not an invention! Our work means to bring new concepts and initiatives together, in the hope of creating a change in behaviour and interactions.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <!-- End Left services -->
+       
+        </div>
+      </div>
+    </div><!-- End Services Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <!-- <div class="our-skill-area fix hidden-sm">
+      <div class="test-overly"></div>
+      <div class="skill-bg area-padding-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Web Design</h3>
+                </div>
+              </div>
+            </div>
+         
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="85" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Graphics Design</h3>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="75" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Php Developer</h3>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="65" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Java Script</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Skills Section -->
+
+    <!-- ======= Team Section ======= -->
+    <div id="team" class="our-team-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>SELECTED PROJECTS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="https://reform.ps/wp-content/uploads/young-women-smiling-400x284.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                   
+                    <li style="margin-left: 110%;">
+                      <a href="#">
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              
+              </div>
+<div class="team-content text-center" >
+               <p>Sociocultural Platform – Innovation Hub</p>
+                <p>Social Transformation</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="https://reform.ps/wp-content/uploads/man-holding-microphone-400x284.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                   
+                    <li style="margin-left: 110%;">
+                      <a href="#">
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </li>
+                   
+                  </ul>
+                </div>
+            
+              </div>
+<div class="team-content text-center" >
+                <p>Civil Peace & Social Inclusion</p>
+                <p>Governance and Public Policy</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="https://reform.ps/wp-content/uploads/man-woman-smiling-400x284.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                   
+                    <li style="margin-left: 110%;">
+                      <a href="#">
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+<div class="team-content text-center" >
+                <p>Rooftop Debate – Drivers of Political Change</p>
+                <p>Governance and Public Policy</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+                  <img src="https://reform.ps/wp-content/uploads/group-megaphone-street-400x284.jpg" alt="">
+                </a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+<div class="team-content text-center" >
+                <h4>Jhon Powel</h4>
+                <p>Seo Expert</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+        </div>
+      </div>
+    </div><!-- End Team Section -->
+
+    <!-- ======= Rviews Section ======= -->
+    <div class="reviews-area">
+      <div class="row no-gutters">
+        <div class="col-lg-6 py-0">
+          <img src="http://www.olx.hub-techs.com/images/upload/DTwaryOAACWlbgyYvftSl1XPBVpSotvZsm2WbU4T.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 work-right-text d-flex align-items-center">
+          <div class="px-5 py-5 py-lg-0">
+            <h1 style="color:rgb(255, 255, 255)">Apply for a membership </h1>
+            <h3 style="color:rgb(255, 255, 255)">CHECK OUT OUR EVENTS CALENDAR AND JOIN US!!</h3>
+            <p style="color:rgb(255, 255, 255)">We can’t decide instead of people nor can we tell them what to decide or how to think. However, we can challenge their minds to help them identify their deepest needs. We believe that the best preparation for the future is doing our best right now. Therefore, we design different dialogue sessions, public debates and awareness-raising activities.</p>
+            <a href="#" class="ready-btn scrollto">UPCOMING EVENTS</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Rviews Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="portfolio-area area-padding fix">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Our Portfolio</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row wesome-project-1 fix">
+          <!-- Start Portfolio -page -->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="awesome-menu ">
+              <ul class="project-menu">
+                <li>
+                  <a href="#" class="active" data-filter="*">All</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".development">Social</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".design">Economic</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".photo">Politician</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row awesome-project-content">
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/1.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="assets/img/portfolio/1.jpg">
+                      <h4>olivx City</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/2.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="assets/img/portfolio/2.jpg">
+                      <h4>Blue Sea</h4>
+                      <span>Photosho</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/3.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="assets/img/portfolio/3.jpg">
+                      <h4>Beautiful Nature</h4>
+                      <span>Web Design</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/4.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="assets/img/portfolio/4.jpg">
+                      <h4>Creative Team</h4>
+                      <span>Web design</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/5.jpg" alt="" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="assets/img/portfolio/5.jpg">
+                      <h4>Beautiful Flower</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/6.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="assets/img/portfolio/6.jpg">
+                      <h4>Night Hill</h4>
+                      <span>Photoshop</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+        </div>
+      </div>
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <div id="pricing" class="pricing-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Pricing Table</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>basic <br /> <span>$80 / month</span></h3>
+              <ol>
+                <li class="check">Online system</li>
+                <li class="check cross">Full access</li>
+                <li class="check">Free apps</li>
+                <li class="check">Multiple slider</li>
+                <li class="check cross">Free domin</li>
+                <li class="check cross">Support unlimited</li>
+                <li class="check">Payment online</li>
+                <li class="check cross">Cash back</li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list active">
+              <span class="saleon">top sale</span>
+              <h3>standard <br /> <span>$110 / month</span></h3>
+              <ol>
+                <li class="check">Online system</li>
+                <li class="check">Full access</li>
+                <li class="check">Free apps</li>
+                <li class="check">Multiple slider</li>
+                <li class="check cross">Free domin</li>
+                <li class="check">Support unlimited</li>
+                <li class="check">Payment online</li>
+                <li class="check cross">Cash back</li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>premium <br /> <span>$150 / month</span></h3>
+              <ol>
+                <li class="check">Online system</li>
+                <li class="check">Full access</li>
+                <li class="check">Free apps</li>
+                <li class="check">Multiple slider</li>
+                <li class="check">Free domin</li>
+                <li class="check">Support unlimited</li>
+                <li class="check">Payment online</li>
+                <li class="check">Cash back</li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>End Pricing Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials-area">
+      <div class="testi-inner area-padding">
+        <div class="testi-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <!-- Start testimonials Start -->
+              <div class="testimonial-content text-center">
+                <!-- start testimonial carousel -->
+                <div class="owl-carousel testimonial-carousel">
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+                      </p> -->
+                      <h2 style="color: #fafefe;">Get Active</h2>
+                    </div>
+                  </div>
+           
+                </div>
+                <a href="#" class="ready-btn scrollto">Become Reform's volunteer</a>
+              </div>
+              <!-- End testimonials end -->
+            </div>
+            <!-- End Right Feature -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <div id="blog" class="blog-area">
+      <div class="blog-inner area-padding">
+        <div class="blog-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Latest News</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start Left Blog -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog.html">
+                    <img src="https://reform.ps/wp-content/uploads/Dalal-Arekat-1-311x250.jpg" alt="">
+                  </a>
+                </div>
+                <!-- <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">13 comments</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+                  </span>
+                </div> -->
+                <div class="blog-text">
+                  <h4>
+                    <a href="blog.html">Wisdom in Filling the Gaps</a>
+                  </h4>
+                  <p>
+                    The Palestinian society is witnessing gaps and sporadic developments, such as the resumption of security coordination with Israel. In this regard, there is not any rational Palestinian politician who denies the relationship between politics and the economy, the fact that the defenseless people living under occupation rely on tax-clearance funds nor that the Palestinian National Authority is unable to continue down this path.                   </p>
+                </div>
+                <span>
+                  <a href="blog.html" class="ready-btn">Read more</a>
+                </span>
+              </div>
+              <!-- Start single blog -->
+            </div>
+            <!-- End Left Blog-->
+            <!-- Start Left Blog -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog.html">
+                    <img src="https://reform.ps/wp-content/uploads/canva-photo-editor-69-400x250.png" alt="">
+                  </a>
+                </div>
+               
+                <div class="blog-text">
+                  <h4>
+                    <a href="blog.html">Peer-to-peer sessions: family partnership</a>
+                  </h4>
+                  <p>
+                    During the peer-to-peer sessions, the men and women participants discussed the role of family upbringing in changing the societal culture in order to enhance the exchange of roles and how this effects the behaviors of both men and women in the public and private spheres.                  </p>
+                </div>
+                <span>
+                  <a href="blog.html" class="ready-btn">Read more</a>
+                </span>
+              </div>
+              <!-- Start single blog -->
+            </div>
+            <!-- End Left Blog-->
+            <!-- Start Right Blog-->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a href="blog.html">
+                    <img src="https://reform.ps/wp-content/uploads/Vy7Td-400x250.jpeg" alt="">
+                  </a>
+                </div>
+             
+                <div class="blog-text">
+                  <h4>
+                    <a href="blog.html">Lorem ipsum dolor sit amet</a>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
+                  </p>
+                </div>
+                <span>
+                  <a href="blog.html" class="ready-btn">Read more</a>
+                </span>
+              </div>
+            </div>
+            <!-- End Right Blog-->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Blog Section -->
+
+    <!-- ======= Suscribe Section ======= -->
+    <div class="suscribe-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+            <div class="suscribe-text text-center">
+              <h3>HERE’S HOW YOU CAN GET INVOLVED.</h3>
+              <a class="sus-btn" href="#">CONTACT US!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Suscribe Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="contact-area">
+      <div class="contact-inner area-padding">
+        <div class="contact-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Contact us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start contact icon column -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-mobile"></i>
+                  <p>
+                    Call:+970 22 96 66 46
+                    <br>
+                    <span>E : info[at]reform.ps</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Start contact icon column -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-envelope-o"></i>
+                  <p>
+                    Email: info@example.com<br>
+                    <span>Web: www.example.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Start contact icon column -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-map-marker"></i>
+                  <p>
+                    Location:Tirawi Bldg, 2nd Floor, Al-Masyoon
+                    <br>
+                    <span>Ramallah, Palestine</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <!-- Start Google Map -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <!-- Start Map -->
+              <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>              <!-- End Map -->
+            </div>
+
+        <script>(function () {
+                  var setting = {"height":538,"width":803,"zoom":8,"queryString":"Palestine","place_id":"ChIJ2b1miNLyHBURhvZm0QGgF-4","satellite":false,"centerCoord":[31.888305110276946,34.89207605478903],"cid":"0xee17a001d166f686","lang":"en","cityUrl":"/israel/tel-aviv","cityAnchorText":"Map of Tel Aviv, Israel, Israel","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"334680"};
+                  var d = document;
+                  var s = d.createElement('script');
+                  s.src = 'https://1map.com/js/script-for-user.js?embed_id=334680';
+                  s.async = true;
+                  s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                  };
+                  var to = d.getElementsByTagName('script')[0];
+                  to.parentNode.insertBefore(s, to);
+                })();</script><a href="https://1map.com/map-embed">1 Map</a></div>
+            <!-- End Google Map -->
+
+            <!-- Start  contact -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form contact-form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+              </div>
+            </div>
+            <!-- End Left contact -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="footer-area" style="background: rgba(0, 0, 0, 0.8);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><img src="https://reform.ps/wp-content/uploads/reform-logo-new-white-RGB.svg" alt="" class="img-fluid"></h2>
+                </div>
+
+                <p style="color: #fafefe;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li style="color:#fafefe">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li style="color:#fafefe">
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li style="color:#fafefe">
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li style="color:#fafefe">
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>information</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+                <div class="footer-contacts">
+                  <p>Tel: +123 456 789</p>
+                  <p>Email: contact@example.com</p>
+                  <p>Working Hours:9am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head" style="color: #fff;">
+                <h4>EXPLORE</h4>
+                <!-- <div class="flicker-img">
+                  <ul>
+                    <li><a href="">Resources</a></li>
+                  </ul>
+                  <a href="#"><img src="assets/img/portfolio/1.jpg" alt=""></a>
+                  <a href="#"><img src="assets/img/portfolio/2.jpg" alt=""></a>
+                  <a href="#"><img src="assets/img/portfolio/3.jpg" alt=""></a>
+                  <a href="#"><img src="assets/img/portfolio/4.jpg" alt=""></a>
+                  <a href="#"><img src="assets/img/portfolio/5.jpg" alt=""></a>
+                  <a href="#"><img src="assets/img/portfolio/6.jpg" alt=""></a>
+                </div> -->
+                <div class="footer-contacts">
+                  <i class="fa fa-adjust fa-lg"></i><a style="color:  #fff;" href="">&nbsp;&nbsp; Resources</a><br><br>
+                  <i class="fa fa-adjust fa-lg "></i><a style="color: #fff;" href="">&nbsp;&nbsp; Read our Blog</a><br><br>
+                  <i class="fa fa-adjust fa-lg "></i><a style="color:  #fff;" href="">&nbsp;&nbsp; Browse our Gallery</a><br><br>
+                  <i class="fa fa-adjust fa-lg "></i><a style="color: #fff;" href="">&nbsp;&nbsp; Watch our Videos</a><br><br>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/appear/jquery.appear.js"></script>
+  <script src="assets/vendor/knob/jquery.knob.js"></script>
+  <script src="assets/vendor/parallax/parallax.js"></script>
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

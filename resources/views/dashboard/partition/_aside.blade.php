@@ -211,7 +211,25 @@
                 <li class="nav-item">
                   <a href="/admin/pages" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
-                    <p>الاخبار</p>
+                    <p>الصفحات</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/admin/menu" class="nav-link ">
+                    <i class="fa fa-angle-double-left"></i>
+                    <p>القوائم</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/admin/offers" class="nav-link ">
+                    <i class="fa fa-angle-double-left"></i>
+                    <p>العروض</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/admin/contact" class="nav-link ">
+                    <i class="fa fa-angle-double-left"></i>
+                    <p>التواصل</p>
                   </a>
                 </li>
               </ul>

@@ -6,12 +6,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>الاخبار</h1>
+            <h1>الصفحات</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
-              <li class="breadcrumb-item active">عرض جميع الاخبار</li>
+              <li class="breadcrumb-item active">عرض جميع الصفحات</li>
             </ol>
           </div>
         </div>
@@ -33,7 +33,7 @@
               @include('frontend.includes.alerts.errors')
 
               <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
-              <a style="display: inline" href="/admin/pages/create" class="btn btn-xs btn-primary">اضف جديد</a>
+              <a style="display: inline" href="/admin/pages/create" class="btn btn-xs btn-primary">اضف صفحة</a>
 
                   <div class="row">
                       <div class="col-sm-12 col-md-6">
@@ -47,8 +47,8 @@
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 150.2px;"> الصورة</th>
                     <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 201px;"> العنوان </th>
                     <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 201px;"> النوع </th>
-                    <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 201px;"> الحالة </th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 244.2px;">الاجرائات </th>
+                    <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 150px;"> الحالة </th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 300px;">الاجرائات </th>
                 </tr></thead>
                 <tbody>
                 @foreach ($pages as $page)                                                 

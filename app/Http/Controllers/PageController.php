@@ -97,7 +97,6 @@ class PageController extends Controller
      */
     public function update(PageRequest $req,$id)
     {
-        //
         try
         {
             $page=Page::find($id);
@@ -133,17 +132,17 @@ class PageController extends Controller
      */
     public function destroy($id)
     {
-        //
-        try{
+        try
+        {
             $page=Page::find($id);
             // dd($page);
             $page->update(['deleted'=>'1']);
             return redirect()->route('pages.index')->with(['success' => 'تم حذف page بنجاح ']);
-            }catch(\Exception $ex)
-            {
-                return redirect()->route('pages.index')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
-    
-            } 
+        }
+        catch(\Exception $ex)
+        {
+           return redirect()->route('pages.index')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
+        } 
     }
 
      // change Page Status

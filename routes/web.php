@@ -14,19 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::group(['perfix'=>'admin'], function () {
-
-    Route::resource('/admin/sliders', 'SliderController');
-    Route::resource('/admin/langs', 'langController');
-    Route::resource('/admin/pages', 'PageController');
-    Route::get('/admin/langs/changStatus/{id}', 'langController@changStatus')->name('langs.status');
-    Route::get('/admin/sliders/changStatus/{id}', 'SliderController@changStatus')->name('sliders.status');
-    Route::get('/admin/pages/changStatus/{id}', 'PageController@changStatus')->name('pages.status');
-
-    
-
-// }
-// );
 
 Route::get('/', function () {
     return view('dashboard.index');

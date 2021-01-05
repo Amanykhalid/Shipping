@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class sliderRequest extends FormRequest
+class MenuRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,20 +24,21 @@ class sliderRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'image' => 'required_without:sliderId|mimes:jpg,jpeg,png',
-            'lang'=>'required'
+            'lang' => 'required|string',
+            'name' => 'required|string',
+            'parent' => 'required|string',
+            'link' => 'required|string',
+            'type'=>'required',
+            'order'=>'required|integer'
         ];
-
     }
-    
+
     public function messages()
     {
         return [
             'required' => 'هذا الحقل مطلوب',
             'string' => '= هذا الحقل  لابد ان يكون احرف',
-            'mimes'  =>'هذا الحقل لابد ان يكون صورة ',
+            'integer'  =>'هذا الحقل لابد ان يكون ارقام ',
         ];
     }
 }

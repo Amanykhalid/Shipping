@@ -6,13 +6,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>اضافة سلايدر</h1>
+            <h1>تعديل اتصال</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
-              <li class="breadcrumb-item "><a href="/admin/sliders"> عرض جميع سلايدرات</a></li>
-              <li class="breadcrumb-item ">اضافة سلايدر</li>
+              <li class="breadcrumb-item "><a href="/admin/contact"> عرض جميع الاتصالات</a></li>
+              <li class="breadcrumb-item ">تعديل اتصال</li>
             </ol>
           </div>
         </div>
@@ -25,62 +25,48 @@
         <div class="col-12">
             <div class="card card-primary">
                 <div class="card-header">
-                  <h3 style="float: right;" class="card-title">اضافة البيانات الاساسية</h3>
+                  <h3 style="float: right;" class="card-title">تعديل البيانات الاساسية</h3>
                 </div>
                 <!-- /.card-header -->
                 
                 <div class="card-body">
                   <div class="container">
-                    <form class="form-horizontal" enctype="multipart/form-data" action="{{route('sliders.store')}}" method="post">
-                        @method('post')
+                    <form class="form-horizontal" enctype="multipart/form-data" action="{{route('contact.update',$contact->id)}}" method="post">
+                        @method('put')
                         @csrf
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputName" class="control-label">اللغة </label>
+                              <label for="inputName" class="control-label"> الاسم  </label>
                               <div>
-                                <select name="lang" class="form-control" id="">
-                                  @foreach ($langs as $item)
-                                    <option value="{{$item->code}}">{{$item->name}}</option>
-                                  @endforeach
-                                </select>
-                                @error("lang")
-                                <span class="text-danger">{{$message}}</span>
-                                @enderror
+                                <input  type="text" name="name" value="{{$contact->name}}"  class="form-control" id="inputName" >
                               </div>
-    
+                              @error("name")
+                              <span class="text-danger">{{$message}}</span>
+                              @enderror
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputName" class="control-label">عنوان السلادير </label>
+                              <label for="inputName" class="control-label">الايميل </label>
                               <div>
-                                <input  type="text" name="title"  class="form-control" id="inputName" >
+                                <input  type="text" name="email" value="{{$contact->email}}"  class="form-control" id="inputName" >
                               </div>
-                              @error("title")
+                              @error("email")
                               <span class="text-danger">{{$message}}</span>
                               @enderror
                             </div>
-    
                           </div>
                         </div>
                         
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="inputName" class="control-label">رابط الbutton الاول </label>
+                              <label for="inputName" class="control-label"> الموبايل</label>
                               <div>
-                                <input  type="text" name="link" value="" class="form-control" id="inputName" >
+                                <input  type="text" name="mobile" value="{{$contact->mobile}}" class="form-control" id="inputName" >
                               </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="inputSkills" class="control-label">صورة السلايدر</label>
-                              <div>
-                                <input   name="image" type="file"  class="form-control"  >
-                              </div>
-                              @error("image")
+                              @error("mobile")
                               <span class="text-danger">{{$message}}</span>
                               @enderror
                             </div>
@@ -88,22 +74,18 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="inputEmail" class="control-label">وصف قصيف</label>
+                          <label for="inputEmail" class="control-label"> الرسالة</label>
                           <div>
-                              <textarea name="description" class="textarea" id="" cols="30" rows="10"></textarea>
+                              <textarea name="massage" class="textarea" id="" cols="30" rows="10">
+                                {{$contact->massage}}
+                              </textarea>
                           </div>
-                          @error("description")
+                          @error("massage")
                               <span class="text-danger">{{$message}}</span>
-                              @enderror
+                          @enderror
                       </div>
-                     
-                      
-                    
-                
-                      
-                 
                       <div >
-                        <input type="submit" value="اضافة " class="btn btn-block btn-xs btn-primary"> 
+                        <input type="submit" value="تعديل " class="btn btn-block btn-xs btn-primary"> 
                     </div>
                     </div>
                                         

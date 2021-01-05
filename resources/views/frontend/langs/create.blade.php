@@ -25,7 +25,7 @@
         <div class="col-12">
             <div class="card card-primary">
                 <div class="card-header">
-                  <h3 style="float: right;" class="card-title">اضافة  لغة</h3>
+                  <h3 style="float: right;" class="card-title">  اضافة البيانات الاساسية</h3>
                 </div>
                 <!-- /.card-header -->
                 

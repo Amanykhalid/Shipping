@@ -13,6 +13,16 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    function __construct()
+    {
+    $this->middleware('permission: التواصل', ['only' => ['index']]);
+    $this->middleware('permission:اضافة اتصال', ['only' => ['create','store']]);
+    $this->middleware('permission:تعديل اتصال', ['only' => ['edit','update']]);
+    $this->middleware('permission:حذف اتصال', ['only' => ['destroy']]);
+    $this->middleware('permission:تغير حالة اتصال', ['only' => ['status']]);
+
+    }
+
     public function index()
     {
         //

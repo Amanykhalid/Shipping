@@ -33,7 +33,9 @@
               @include('frontend.includes.alerts.errors')
 
               <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
-              <a style="display: inline" href="/admin/pages/create" class="btn btn-xs btn-primary">اضف صفحة</a>
+                @can('اضافة صفحة')
+                <a style="display: inline" href="/admin/pages/create" class="btn btn-xs btn-primary">اضف صفحة</a>
+                @endcan
 
                   <div class="row">
                       <div class="col-sm-12 col-md-6">
@@ -60,12 +62,17 @@
                   <td>{{ $page->status == 1 ? 'مفعل'  : 'غير مفعل' }}</td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="{{route('pages.edit',$page->id)}}" class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
+                      @can('تعديل صفحة')
+                        <a href="{{route('pages.edit',$page->id)}}" class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
+                      @endcan
+                      @can('حذف صفحة')
                         <form action="{{route('pages.destroy',$page->id)}}" style="display :inline" method="POST">
                           @method('delete')
                           @csrf
                             <button type="submit" class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1" name="delete" value="Delete">حذف</button>
                         </form>
+                      @endcan
+                      @can('تغير حالة صفحة')
                         <a href="{{route('pages.status',$page->id)}}" class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
                           @if($page ->status == 0)
                           تفعيل
@@ -73,6 +80,7 @@
                           الغاء تفعيل
                           @endif
                         </a>
+                      @endcan
                     </div>
                   </td>
                 </tr>

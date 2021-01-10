@@ -15,12 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+
 Route::get('/', function () {
-    return view('dashboard.index');
+    return view('index');
 });
-// Route::get('/langs', function () {
-//     return view('dashboard.langs.index');
-// });
 // Route::get('/langs/create', function () {
 //     return view('dashboard.langs.create');
 // });
@@ -111,4 +110,10 @@ Route::get('/', function () {
 // Route::get('/news.html', 'HomeController@news');
 // Route::get('/create.html', 'HomeController@create_tax');
 // Route::get('/create2.html', 'HomeController@register');
+
+
+// Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('bar-charts', 'ChartController@index');
 

@@ -14,6 +14,16 @@ class PageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    function __construct()
+    {
+    $this->middleware('permission: الصفحات', ['only' => ['index']]);
+    $this->middleware('permission:اضافة صفحة', ['only' => ['create','store']]);
+    $this->middleware('permission:تعديل صفحة', ['only' => ['edit','update']]);
+    $this->middleware('permission:حذف صفحة', ['only' => ['destroy']]);
+    $this->middleware('permission:تغير حالة صفحة', ['only' => ['status']]);
+
+    }
+
     public function index()
     {
         //

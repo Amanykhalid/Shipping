@@ -14,6 +14,16 @@ class MenuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    function __construct()
+    {
+    $this->middleware('permission: القوائم', ['only' => ['index']]);
+    $this->middleware('permission:اضافة قائمة', ['only' => ['create','store']]);
+    $this->middleware('permission:تعديل قائمة', ['only' => ['edit','update']]);
+    $this->middleware('permission:حذف قائمة', ['only' => ['destroy']]);
+    $this->middleware('permission:تغير حالة قائمة', ['only' => ['status']]);
+
+    }
+
     public function index()
     {
         //

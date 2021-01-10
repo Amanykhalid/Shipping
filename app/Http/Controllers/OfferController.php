@@ -14,6 +14,16 @@ class OfferController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    function __construct()
+    {
+    $this->middleware('permission: العروض', ['only' => ['index']]);
+    $this->middleware('permission:اضافة عرض', ['only' => ['create','store']]);
+    $this->middleware('permission:تعديل عرض', ['only' => ['edit','update']]);
+    $this->middleware('permission:حذف عرض', ['only' => ['destroy']]);
+    $this->middleware('permission:تغير حالة عرض', ['only' => ['status']]);
+
+    }
+
     public function index()
     {
         //

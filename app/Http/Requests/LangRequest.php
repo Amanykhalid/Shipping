@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+
 
 class LangRequest extends FormRequest
 {
@@ -28,7 +30,7 @@ class LangRequest extends FormRequest
             'name' => 'required|string',
             'code' => 'required|string',
             'dir' => 'required',
-            'flag'=>'required_without|LangId'
+            'flag'=>'required_without:LangId'
         ];
     }
 

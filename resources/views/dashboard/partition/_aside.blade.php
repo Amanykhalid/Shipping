@@ -32,9 +32,9 @@
             </a>
            
           </li>
-           
-    
+          @can('المستخدمين')
             <li class="nav-item has-treeview ">
+
               <a href="#" class="nav-link ">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <p>
@@ -42,108 +42,30 @@
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
+              @can('قائمة المستخدمين')
               <ul class="nav nav-treeview">
-                
                 <li class="nav-item">
-                  <a href="/admins" class="nav-link ">
+                  <a href="/admin/users" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
-                                        <p>الاداريين</p>
+                    <p> قائمة المستخدمين</p>
                   </a>
                 </li>
-            
-                <li class="nav-item">
-                  <a href="/supervisor" class="nav-link">
-                    <i class="fa fa-angle-double-left"></i>
-                                        <p>المشرفين</p>
-                  </a>
-                </li> 
-                <li class="nav-item">
-                  <a href="/authorities" class="nav-link">
-                    <i class="fa fa-angle-double-left"></i>
-                                        <p>الجهات المختصة</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/monitors" class="nav-link">
-                    <i class="fa fa-angle-double-left"></i>
-                                        <p>المنذرين</p>
-                  </a>
-                </li> 
-            
+              </ul>
+              @endcan
 
-                
-                
-                <li class="nav-item">
-                  <a href="/people" class="nav-link">
-                    <i class="fa fa-angle-double-left"></i>
-                                        <p>اصحاب التذاكر</p>
-                  </a>
-                </li>
-               
-                
-
-                {{-- <li class="nav-item">
-                  <a href="/user/create" class="nav-link">
-                    <i class="fa fa-angle-double-left"></i>
-                                        <p>اضافة جديد</p>
-                  </a> --}}
-            
-                </li> 
-             
-              </ul>
-            </li>
-            <li class="nav-item has-treeview ">
-              <a href="#" class="nav-link ">
-                <i class="fa fa-ticket" aria-hidden="true"></i>
-                <p>
-                  التذاكر
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
+              @can('صلاحيات المستخدمين')
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="/tickets" class="nav-link ">
+                  <a href="/admin/roles" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
-                    <p>جميع التذاكر</p>
+                    <p> صلاحيات المستخدمين</p>
                   </a>
                 </li>
               </ul>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="/tickets/create" class="nav-link ">
-                    <i class="fa fa-angle-double-left"></i>
-                    <p>انشاء تذكرة</p>
-                  </a>
-                </li>
-              </ul>
+              @endcan
             </li>
-            <li class="nav-item has-treeview ">
-              <a href="/reports" class="nav-link ">
-                <i class="nav-icon fas fa-book" aria-hidden="true"></i>
-                <p>
-                  التقارير
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-          
-            </li>
-            {{--  <li class="nav-item has-treeview ">
-              <a href="#" class="nav-link ">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <p>
-               التقراير
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="" class="nav-link ">
-                    <i class="fa fa-angle-double-left"></i>
-                    <p>الاعدادت الاساسية</p>
-                  </a>
-                </li>
-              </ul>
-            </li>  --}}
+          @endcan
+          @can('قائمة اللغات')
             <li class="nav-item has-treeview ">
               <a href="#" class="nav-link ">
                 <i class="fa fa-flag" aria-hidden="true"></i>
@@ -170,29 +92,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item has-treeview ">
-              <a href="#" class="nav-link ">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <p>
-                  اعدادات النظام
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="/configs" class="nav-link ">
-                    <i class="fa fa-angle-double-left"></i>
-                    <p>الاعدادت الاساسية</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="/social" class="nav-link ">
-                    <i class="fa fa-angle-double-left"></i>
-                    <p>حسابات السوشل ميديا</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
+          @endcan
             <li class="nav-item has-treeview ">
               <a href="#" class="nav-link ">
                 <i class="fa fa-cog" aria-hidden="true"></i>
@@ -202,36 +102,46 @@
                 </p>
               </a>
               <ul class="nav nav-treeview">
+                @can(' سلايدرات')
                 <li class="nav-item">
                   <a href="/admin/sliders" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
                     <p>السلاديرات</p>
                   </a>
                 </li>
+                @endcan
+                @can(' الصفحات')
                 <li class="nav-item">
                   <a href="/admin/pages" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
                     <p>الصفحات</p>
                   </a>
                 </li>
+                @endcan
+                @can(' القوائم')
                 <li class="nav-item">
                   <a href="/admin/menu" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
                     <p>القوائم</p>
                   </a>
                 </li>
+                @endcan
+                @can(' العروض')
                 <li class="nav-item">
                   <a href="/admin/offers" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
                     <p>العروض</p>
                   </a>
                 </li>
+                @endcan
+                @can(' التواصل')
                 <li class="nav-item">
                   <a href="/admin/contact" class="nav-link ">
                     <i class="fa fa-angle-double-left"></i>
                     <p>التواصل</p>
                   </a>
                 </li>
+                @endcan
               </ul>
             </li>
              </li>

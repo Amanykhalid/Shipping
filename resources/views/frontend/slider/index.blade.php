@@ -30,7 +30,10 @@
                   <div class="row">
                 
                       <div class="col-sm-12 col-md-6">
+                        @can('اضافة سلايدر')
                         <a style="display: inline" href="/admin/sliders/create" class="btn btn-xs btn-primary">اضف سلايدر</a>
+                        @endcan
+                       
                           <div class="dataTables_length" id="example1_length"> 
                              <label>Show <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label>
                             
@@ -54,12 +57,17 @@
 
                   <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
+                      @can('تعديل سلايدر')
                       <a href="{{route('sliders.edit',$slider->id)}}" class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
+                      @endcan
+                      @can('حذف سلايدر')
                       <form action="{{route('sliders.destroy',$slider->id)}}" style="display :inline" method="POST">
                      @method('delete')
                      @csrf
                       <button type="submit" class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1" name="delete" value="Delete">حذف</button>
                       </form>
+                      @endcan
+                      @can('تغير حالة سلايدر')
                       <a href="{{route('sliders.status',$slider->id)}}" class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
                         @if($slider ->status == 0)
                         تفعيل
@@ -67,6 +75,7 @@
                         الغاء تفعيل
                         @endif
                       </a>
+                      @endcan
                     </div>
                   </td>
                   

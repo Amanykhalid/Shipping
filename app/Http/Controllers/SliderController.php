@@ -8,6 +8,15 @@ use App\Http\Requests\sliderRequest;
 use App\Lang;
 class SliderController extends Controller
 {
+    function __construct()
+    {
+    $this->middleware('permission: سلايدرات', ['only' => ['index']]);
+    $this->middleware('permission:اضافة سلايدر', ['only' => ['create','store']]);
+    $this->middleware('permission:تعديل سلايدر', ['only' => ['edit','update']]);
+    $this->middleware('permission:حذف سلايدر', ['only' => ['destroy']]);
+    $this->middleware('permission:تغير حالة سلايدر', ['only' => ['status']]);
+
+    }
     // ٍShow All Sliders Page 
     public function index()
     {

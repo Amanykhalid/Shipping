@@ -10,6 +10,15 @@ use App\Lang;
 
 class langController extends Controller
 {
+    function __construct()
+    {
+    $this->middleware('permission:قائمة اللغات', ['only' => ['index']]);
+    $this->middleware('permission:اضافة لغة', ['only' => ['create','store']]);
+    $this->middleware('permission:تعديل لغة', ['only' => ['edit','update']]);
+    $this->middleware('permission:حذف لغة', ['only' => ['destroy']]);
+    $this->middleware('permission:تغير حالة لغة', ['only' => ['status']]);
+
+    }
     // ٍShow All Languages Page 
     public function index()
     {

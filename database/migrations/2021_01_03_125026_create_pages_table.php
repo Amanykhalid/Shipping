@@ -25,6 +25,7 @@ class CreatePagesTable extends Migration
             $table->string('button_title');
             $table->string('button_link');
             $table->string('type');
+            $table->string('lang');
             $table->string('status')->default(1);
             $table->string('deleted')->default(0);
             $table->timestamps();

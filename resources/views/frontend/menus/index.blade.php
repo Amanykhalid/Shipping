@@ -24,7 +24,9 @@
       <div class="row">
         <div class="col-12">
           <div class="card">
+            @can('اضافة قائمة')
             <a style="display: inline" href="/admin/menu/create" class="btn btn-xs btn-primary">اضف قائمة</a>
+            @endcan
 
             <!-- /.card-header -->
             <div class="card-body">
@@ -75,19 +77,25 @@
                                 <td class="sorting_1"> {{$menus->status== 1 ? 'مفعل'  : 'غير مفعل' }}</td>
                                 <td>
                                   <div class="btn-group" role="group" aria-label="Basic example">
+                                    @can('تعديل قائمة')
                                     <a href="{{route('menu.edit',$menus->id)}}" class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
-                                      <form action="{{route('menu.destroy',$menus->id)}}" style="display :inline" method="POST">
-                                        @method('delete')
-                                        @csrf
-                                          <button type="submit" class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1" name="delete" value="Delete">حذف</button>
-                                      </form>
-                                      <a href="{{route('menu.status',$menus->id)}}" class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
-                                        @if($menus ->status == 0)
-                                        تفعيل
-                                        @else
-                                        الغاء تفعيل
-                                        @endif
-                                      </a>
+                                    @endcan
+                                    @can('حذف قائمة')
+                                    <form action="{{route('menu.destroy',$menus->id)}}" style="display :inline" method="POST">
+                                      @method('delete')
+                                      @csrf
+                                        <button type="submit" class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1" name="delete" value="Delete">حذف</button>
+                                    </form>
+                                    @endcan
+                                    @can('تغير حالة قائمة')
+                                    <a href="{{route('menu.status',$menus->id)}}" class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
+                                      @if($menus ->status == 0)
+                                      تفعيل
+                                      @else
+                                      الغاء تفعيل
+                                      @endif
+                                    </a>
+                                    @endcan
                                   </div>
                                 </td>
                                 

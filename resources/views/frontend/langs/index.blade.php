@@ -30,7 +30,9 @@
             <div class="card-body">
               @include('frontend.includes.alerts.success')
               @include('frontend.includes.alerts.errors')
+              @can('اضافة لغة')
               <a style="display: inline" href="/admin/langs/create" class="btn btn-xs btn-primary">اضف لغة</a>
+              @endcan
 
               <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
                   <div class="row">
@@ -59,14 +61,17 @@
                     <td>{{ $Lang->status == 1 ? 'مفعل'  : 'غير مفعل' }}</td>
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example"> 
+                        @can('تعديل لغة')
                         <a href="{{route('langs.edit',$Lang->id)}}"class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
-    
+                        @endcan
+                        @can('حذف لغة')
                         <form action="{{route('langs.destroy',$Lang->id)}}" style="display :inline" method="POST">
                           @method('delete')
                           @csrf
                            <button type="submit" class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1" name="delete" value="Delete">حذف</button>
-                           </form>
-
+                        </form>
+                        @endcan
+                        @can('تعديل حالة لغة')
                         <a href="{{route('langs.status',$Lang->id)}}" class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
                           @if($Lang ->status == 0)
                           تفعيل
@@ -74,6 +79,7 @@
                           الغاء تفعيل
                           @endif
                         </a>
+                        @endcan
                         
                       </div>
                     </td>

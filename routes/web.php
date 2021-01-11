@@ -115,5 +115,14 @@ Route::get('/', function () {
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('bar-charts', 'ChartController@index');
+Route::get('bar-charts', function () {
+        return view('chart');
+});
+Route::get('line', function () {
+    return view('line');
+});
+Route::get('chart2', function () {
+    return view('chart2');
+});
+
 

@@ -161,7 +161,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Spatie\Permission\PermissionServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
 
@@ -179,6 +178,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        ConsoleTVs\Charts\Registrar::class,
 
     ],
 
@@ -233,7 +233,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
+        // 'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
+        'Charts' =>ConsoleTVs\Charts\Registrar::class
+
 
 
     ],

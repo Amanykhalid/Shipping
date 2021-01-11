@@ -66,5 +66,6 @@ class Kernel extends HttpKernel
         'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
         'CheakStatus' => \App\Http\Middleware\CheakStatus::class,
 
+
     ];
 }

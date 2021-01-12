@@ -197,6 +197,9 @@
            },
            options: {
                scales: {
+                tooltips: {
+                      mode: 'point'
+                  },
                    yAxes: [{
                        ticks: {
                            beginAtZero: true
@@ -206,40 +209,38 @@
            }
        });
    </script>
+
     <script>
       var ctx = document.getElementById('myChart3').getContext('2d');
       var myChart = new Chart(ctx, {
-          type: 'pie',
-          data: {
-              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        type: 'line',
+        data: {
               datasets: [{
-                  label: '# of Votes',
-                  data: [1, 6, 3, 5, 12, 3],
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(255, 206, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(255, 159, 64, 0.2)'
-                  ],
-                  borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 159, 64, 1)'
-                  ],
-                  borderWidth: 1
-              }]
+                  data: [20, 50, 100, 75, 25, 0],
+                  label: 'Left dataset',
+                  backgroundColor: '#f00',
+                  // This binds the dataset to the left y axis
+                  yAxisID: 'left-y-axis'
+              }, {
+                  data: [0.1, 0.5, 1.0, 2.0, 1.5, 0],
+                  label: 'Right dataset',
+                  backgroundColor: '#12322',
+                  // This binds the dataset to the right y axis
+                  yAxisID: 'right-y-axis'
+                  
+              }],
+              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
           },
           options: {
               scales: {
                   yAxes: [{
-                      ticks: {
-                          beginAtZero: true
-                      }
+                      id: 'left-y-axis',
+                      type: 'linear',
+                      position: 'left'
+                  }, {
+                      id: 'right-y-axis',
+                      type: 'linear',
+                      position: 'right'
                   }]
               }
           }

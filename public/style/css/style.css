@@ -8082,6 +8082,7 @@ h1, h2, h3, h4, h5,
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       background-color: #0056b3;
+      color: #fff;
       }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -8206,6 +8207,9 @@ h1, h2, h3, h4, h5,
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
       color: #000000 !important; }
+      .ftco-navbar-light.scrolled .nav-link:hover{
+        color: #fff !important;
+      }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #dc3545!important; }
     .ftco-navbar-light.scrolled.awake {

@@ -1,157 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Shipx World</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="https://www.qallam.hub-techs.com/store/uploads/others/favicon.jpg">
+@extends('layouts.site')
+@section('contant')
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<div class="container">
+   
 
-    <link rel="stylesheet" href="style/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('style/css/animate.css') }}">
-    <link href="{{ asset('style/assets/css/login-register.css') }}" rel="stylesheet" />
-	<link rel="stylesheet" href="{{ asset('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') }}">
-
-	<script src="{{ asset('style/assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
-	<script src="style/assets/js/bootstrap.js" type="text/javascript"></script>
-	<script src="style/assets/js/login-register.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="style/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="style/css/aos.css">
-
-    <link rel="stylesheet" href="style/css/ionicons.min.css">
-
-    <link rel="stylesheet" href="style/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="style/css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="style/css/flaticon.css">
-    <link rel="stylesheet" href="style/css/icomoon.css">
-    <link rel="stylesheet" href="style/css/style.css">
-  </head>
-  <style>
+	  <div class="collapse navbar-collapse" style="top: 0px" id="ftco-nav">
+		<div class="row">
+			<ul style="font-size: 10px" class="navbar-nav">
+				@foreach ($menus as $menu)
+					<li  class="nav-item"><a href="#get_rates" class="btn bigLink-login nav-link"  style="margin-top: 10px;">{{$menu->name}} </a></li>	
+				@endforeach
+						  
+			</ul>
+		</div>
 	
-	.headder {
-		background:#fff;
-		padding: 10px;
-		text-align: center;
-	  }
-  </style>
-  <body>
-	<div class="headder">
-		<div class="container">
-			<div class="row">
-
-			<!-- change color and space between icon and text -->
-			<div class="col-sm-1">
-				<a href="https://www.qallam.hub-techs.com/store">
-				<!-- logo -->
-					<img src="{{asset('style/images/gss png-01.png')}}" height="50px" width="70px"  alt="logo" >
-				<!-- logo -->
-				</a>
-			</div>
-			  <div class="col-sm-2" style="margin-top: 10px">
-				<a href="#"><span class="icon icon-phone"></span><span class="text" style="margin-left: 10px;">(+965) 66549961   </span></a>
-			</div>
-			<div class="col-sm-2" style="margin-top: 10px">
-				
-				<a href="#"><span class="icon icon-envelope"></span><span class="text" style="margin-left: 10px;">info@shipxworld.com</span></a>
-			</div>
-
-				<!-- add margin-top -->
-			  <div style="display: inline-block;margin-top: 10px" id="login" class="offset-sm-4 col-sm-2">
-				<a style="display: inline-block" class="btn btn-outline-primary bigg-login" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a>
-				<a class="btn btn-danger big-register" style="display: inline-block,color: #fff" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Register</a>
-			
-				<div class="modal fade login" id="loginModal">
-					<div class="modal-dialog login animated">
-						<div class="modal-content">
-						   <div class="modal-header">
-							  <button type="button" style="margin-left: 10px" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							  <h4 class="modal-title">Login with</h4>
-						  </div>
-						  <div class="modal-body">
-							  <div class="box">
-								   <div class="content">
-									  <div class="social">
-										 
-										  <a id="google_login" class="circle google" href="#">
-											  <i class="fa fa-google-plus fa-fw"></i>
-										  </a>
-										  <a id="facebook_login" class="circle facebook" href="#">
-											  <i class="fa fa-facebook fa-fw"></i>
-										  </a>
-									  </div>
-									  <div class="division">
-										  <div class="line l"></div>
-											<span>or</span>
-										  <div class="line r"></div>
-									  </div>
-									  <div class="error"></div>
-									  <div class="form loginBox">
-										  <form method="" action="" accept-charset="UTF-8">
-										  <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-										  <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-										  <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
-										  </form>
-									  </div>
-								   </div>
-							  </div>
-							  <div class="box">
-								  <div class="content registerBox" style="display:none;">
-								   <div class="form">
-									  <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
-									  <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-									  <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-									  <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-									  <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
-									  </form>
-									  </div>
-								  </div>
-							  </div>
-						  </div>
-						  <div class="modal-footer">
-							  <div class="forgot login-footer">
-								  <span>Looking to
-									   <a href="javascript: showRegisterForm();">create an account</a>
-								  ?</span>
-							  </div>
-							  <div class="forgot register-footer" style="display:none">
-								   <span>Already have an account?</span>
-								   <a href="javascript: showLoginForm();">Login</a>
-							  </div>
-						  </div>
-						</div>
-					</div>
-				</div></div>
-			</div>
-		  </div>
 	  </div>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	   
-
-		  <div class="collapse navbar-collapse" style="top: 0px" id="ftco-nav">
-			<div class="row">
-				<ul style="font-size: 10px" class="navbar-nav">
-					<li  class="nav-item"><a href="#get_rates" class="btn bigLink-login nav-link"  style="margin-top: 10px;">Home </a></li>
-					<li class="nav-item"><a href="#Our_Partners"class="btn bigLink-login nav-link" style="margin-top: 10px;">Our News</a></li>
-					<li class="nav-item"><a href="#how_it_work" class="btn bigLink-login nav-link" style="margin-top: 10px;">Our Blogs</a></li>
-					<li class="nav-item"><a href="#our_service"class="btn bigLink-login nav-link" style="margin-top: 10px;"> Our Mythology</a></li>
-					<li class="nav-item"><a href="https://www.qallam.hub-techs.com/store/home/others_product/featured"  class="btn bigLink-login nav-link" style="margin-top: 10px;">Contact</a>
-					</li>			  
-				</ul>
-			</div>
-		
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-    
+	</div>
+  </nav>
+<!-- END nav -->
     <div class="hero-wrap" style="background-image: url('https://slickdeals.net/blog/wp-content/uploads/2020/04/20-hero-0414-store-shipping.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -293,106 +159,20 @@
           </div>
         </div>
     		<div class="row">
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image:url({{asset('style/images/dan-kb-UdxJSRD6UNM-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">Movement of cargo </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/rainer-bleek-Gc7NCADQ8So-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/4">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/12">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/ernesto-leon-4H_I-HRjkyA-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/14">commercial container</a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-				</div>
-				
+				@foreach ($news as $new)
 				<div class="col-md-3">
     				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image:url({{asset('style/images/dan-kb-UdxJSRD6UNM-unsplash.jpg')}});">
+    					<div class="img d-flex align-items-end" style="background-image:url({{asset("images/$new->image_short")}})">
     					</div>
     					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">Movement of cargo </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
+    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">{{$new->name}} </a></h2>
+    						<p class="d-flex mb-0 d-block">
+								<a href="{{route('detailspage2',$new->id)}}" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a>
+							</p>
     					</div>
     				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/rainer-bleek-Gc7NCADQ8So-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/4">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/12">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/ernesto-leon-4H_I-HRjkyA-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/14">commercial container</a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-
-
-
-    			
-				
-
+    			</div>	
+				@endforeach					
     			
     		</div>
     	</div>
@@ -406,267 +186,23 @@
           </div>
         </div>
     		<div class="row">
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image:url({{asset('style/images/pablo-zavala-HnjppSOyAr8-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">Movement of cargo </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/lee-lawson-MMRVyCPlM58-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/4">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/max-williams-yo7WXSJe3Es-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/12">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/felipepelaquim-Wg2fTbpC1lc-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/14">commercial container</a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-				</div>
-				
+				@foreach ($blogs as $blog)
 				<div class="col-md-3">
     				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image:url({{asset('style/images/dan-kb-UdxJSRD6UNM-unsplash.jpg')}});">
+    					<div class="img d-flex align-items-end" style="background-image:url({{asset("images/$blog->image_short")}});">
     					</div>
     					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">Movement of cargo </a></h2>
+    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">{{$blog->name}}</a></h2>
     						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
     					</div>
     				</div>
     			</div>
+    
+				@endforeach				
     			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/rainer-bleek-Gc7NCADQ8So-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/4">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/12">Traffickers abuse </a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			
-									
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate fadeInUp ftco-animated">
-    					<div class="img d-flex align-items-end" style="background-image: url({{asset('style/images/ernesto-leon-4H_I-HRjkyA-unsplash.jpg')}});">
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/14">commercial container</a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-
     		</div>
     	</div>
-    </section>
+	</section>
+@endsection	
 
  
-	
-	<section id="our_service" class="ftco-section services-section img"
-	
-	style="background-image: url(https://static.fibre2fashion.com/articleresources/images/42/4134/how-to-avoid-late-shipment-of-apparel-fabrics-for-export-orders-related-penalties.jpg);https://static.fibre2fashion.com/articleresources/images/42/4134/how-to-avoid-late-shipment-of-apparel-fabrics-for-export-orders-related-penalties.jpg style="background:#FF9966" >
-    	<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2 class="mb-3" style=" font-weight: bold;">Our Mythology </h2>
-          </div>
-        </div>
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img style="width: 100%;height: 200px;" class="d-block w-550 h-200" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="First slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style=" color: #fff;  font-weight: bold;">International express shipping </h5>
-					<p style="font-weight: bold;">We can ship internationally to just about any destination, and on any time-frame. From urgent rush orders to slower freight deliveries, we can handle it all.</p>
-				  </div>
-			  </div>
-			  <div class="carousel-item">
-				<img  style="width: 100%;height: 200px;" class="d-block w-100" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="Second slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style=" color: #fff; font-weight: bold;">Domestic deliveries </h5>
-					<p style=" font-weight: bold;">We offer end-to-end domestic deliveries and can ship your orders to your domestic customers quickly and easily.
-					</p>
-				  </div>
-			  </div>
-			  <div class="carousel-item">
-				<img  style="width: 100%;height: 200px;" class="d-block w-100" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style=" color: #fff; font-weight: bold;">Cash on Delivery shipments </h5>
-					<p style=" font-weight: bold;">While many competing shipping & logistics companies no longer handle Cash on Delivery (COD) shipments, Shipx does. We’re happy to offer our COD services to customers and help streamline your sales process.</p>
-				  </div>
-			  </div>
-			  <div class="carousel-item ">
-				<img style="width: 100%;height: 200px;" class="d-block w-550 h-200" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="First slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style="color: #fff; font-weight: bold;">Door-to-door trucking  </h5>
-					<p style="font-weight: bold;">We offer reliable, reasonably priced door-to-door trucking services. You can trust us to deliver end-to-end services for your parcel, no matter what size. From individual deliveries to freight, full-sized cargo containers and more, we handle it all.</p>
-				  </div>
-			  </div>
-			  <div class="carousel-item">
-				<img  style="width: 100%;height: 200px;" class="d-block w-100" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="Second slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style="color: #fff;  font-weight: bold;">Air freight services  </h5>
-					<p style=" font-weight: bold;">Need your items shipped quickly? Our extensive air network makes express shipping quick and easy. We can deliver to your destination ASAP – no matter where in the world you’re sending your shipments.
-					</p >
-				  </div>
-			  </div>
-			  <div class="carousel-item">
-				<img  style="width: 100%;height: 200px;" class="d-block w-100" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style="color: #fff;  font-weight: bold;">Sea freight services  </h5>
-					<p style="font-weight: bold;">For large, full container load shipments, we can arrange the transportation and logistics on cargo ships, and even provide end-to-end shipping to and from each port, ensuring your freight arrives without you having to hire an additional shipping company.</p>
-				  </div>
-			  </div>
-			  <div class="carousel-item">
-				<img  style="width: 100%;height: 200px;" class="d-block w-100" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style="color: #fff; font-weight: bold;">Land freight services   </h5>
-					<p style=" font-weight: bold;">We specialize in trucking and land freight both domestically and internationally, and our fleet of truck drivers and vehicles can handle transporting shipments of all shapes and sizes.</p>
-				  </div>
-			  </div>
-			  <div class="carousel-item">
-				<img  style="width: 100%;height: 200px;" class="d-block w-100" src="https://img.pngio.com/empty-png-pictures-trzcacakrs-empty-png-1920_1080.png" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5 style="color: #fff; font-weight: bold;">Custom Clearance  </h5>
-					<p style="font-weight: bold;">We can help with documents/non-documents clearance and help ensure that your packages clear customs. We’ll keep an eye on your shipments throughout the process, and guarantee it passes any required inspections before it reaches its destination.  </p>
-				  </div>
-			  </div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
-		  </div>
-		  
-    	</div>
-    </section>
-	
-
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <img src="{{asset('style/images/GSS اببيض-01.png')}}" max-width="100%" height="250px" width="250px" alt="">
-            </div>
-          </div>
-        
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"> USEFUL LINKS</h2>
-              <ul class="list-unstyled">
-                <li><a href="#get_rates" class="py-2 d-block font-li">Home</a></li>
-				<li><a href="#our_partners" class="py-2 d-block font-li"> Our News</a></li>
-				<li><a href="#our_service" class="py-2 d-block font-li">Our Blogs</a></li>
-				<li><a href="#our_service" class="py-2 d-block font-li">Our Mythology</a></li>
-				<li><a href="#login" class="py-2 d-block font-li">Login / Register</a></li>
-                <li><a href="https://www.qallam.hub-techs.com/store/home/contact/" class="py-2 d-block font-li">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><a href="#"><span class="icon icon-phone font-li"></span><span class="text">(+965) 66549961   </span></a></li>
-					<li><a href="#"><span class="icon icon-envelope font-li"></span><span class="text">info@shipxworld.com</span></a></li>
-					<li><a style="display: inline-block" href="https://www.instagram.com/shipxworld/"><i class="icon icon-instagram"></i></a> <a style="display: inline-block" href="https://twitter.com/ShipxWorld/"><i class="icon icon-twitter"></i></a> <a  style="display: inline-block"href="https://www.facebook.com/shipxworld/"><i class="icon icon-facebook"></i></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-     
-      </div>
-    </footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-  
-
-  <script src="{{ asset('style/js/jquery.min.js') }}"></script>
-  <script src="style/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="style/js/popper.min.js"></script>
-  <script src="style/js/bootstrap.min.js"></script>
-  <script src="style/js/jquery.easing.1.3.js"></script>
-  <script src="style/js/jquery.waypoints.min.js"></script>
-  <script src="style/js/jquery.stellar.min.js"></script>
-  <script src="style/js/owl.carousel.min.js"></script>
-  <script src="style/js/jquery.magnific-popup.min.js"></script>
-  <script src="style/js/aos.js"></script>
-  <script src="style/js/jquery.animateNumber.min.js"></script>
-  <script src="style/js/bootstrap-datepicker.js"></script>
-  <script src="style/js/jquery.timepicker.min.js"></script>
-  <script src="style/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="style/js/google-map.js"></script>
-  <script src="style/js/main.js"></script>
-  <script>
-	document.addEventListener( 'DOMContentLoaded', function () {
-		new Splide( '#card-slider', {
-			perPage    : 2,
-			breakpoints: {
-				600: {
-					perPage: 1,
-				}
-			}
-		} ).mount();
-	} );
-  </script>
-    
-  </body>
-</html>

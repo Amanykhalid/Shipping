@@ -1,0 +1,44 @@
+.container-fluid .row .container ol{
+    background-color: #fff;
+    padding-left: 0;
+}
+.content-header{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h1{
+    text-transform:uppercase;
+    color: #1a3457;
+}.main-content{
+    margin-bottom: 24px;
+}
+.main-content img{
+    width: 100%;
+    height: 410px;
+}
+.tab-content .media img{
+    width: 80px;
+    height: 80px;
+}.tab-content .media h6{
+    color: #1f578c;
+}
+.tab-content .media{
+    margin-top: 11px;
+}
+.tab-content .media  .media-body{
+    font-size: 10px;
+}
+.detail-content{
+    margin-bottom: 34px;
+}.detail-content h3{
+    color: #1f578c;
+}.detail-content p span{
+    color: #1a3457;
+}.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    border: none;
+    font-weight: bold;
+    border-bottom: 3px solid #1a3457 ;
+}.nav-tabs .nav-link:hover{
+    border: none;
+    color:#1a3457 ;
+}

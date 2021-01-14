@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="style/css/aos.css">
 
     <link rel="stylesheet" href="style/css/ionicons.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	{{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="{{ asset('style/css/bootstrap-datepicker.css')}}">
     <link rel="stylesheet" href="{{ asset('style/css/jquery.timepicker.css')}}">
 
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="style/css/flaticon.css">
     <link rel="stylesheet" href="style/css/icomoon.css">
 	<link rel="stylesheet" href="{{ asset('style/css/detiles.css')}}">
-	<link rel="stylesheet" href="style/css/style.css">
+	<link rel="stylesheet" href="{{ asset('style/css/style.css')}}">
   </head>
   <style>
 	

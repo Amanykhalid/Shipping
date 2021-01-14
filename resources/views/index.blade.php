@@ -167,7 +167,7 @@
     					<div class="text p-4 text-center">
     						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">{{$new->name}} </a></h2>
     						<p class="d-flex mb-0 d-block">
-								<a href="{{route('detailspage2',$new->id)}}" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a>
+								<a href="/detailspage{{$new->id}}" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a>
 							</p>
     					</div>
     				</div>
@@ -193,7 +193,7 @@
     					</div>
     					<div class="text p-4 text-center">
     						<h2 class="mb-0"><a href="https://www.qallam.hub-techs.com/store/home/product_view/2">{{$blog->name}}</a></h2>
-    						<p class="d-flex mb-0 d-block"> <a href="#" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
+    						<p class="d-flex mb-0 d-block"> <a href="/detailspage{{$blog->id}}" class="btn btn-black btn-outline-black " style="margin-left: 80px">Details</a></p>
     					</div>
     				</div>
     			</div>

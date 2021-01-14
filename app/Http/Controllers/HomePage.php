@@ -17,15 +17,14 @@ class HomePage extends Controller
         $blogs=Page::select('*')->where('status',1)->where('deleted',0)->where('type','blog')->get();
         return view('index',compact('menus','news','blogs'));
     }
-    public function Details()
+    public function Details($id)
     {
         
         # code...
-        // $pages=Page::select('*')->where('id',$id)->first();
-        // $news=Page::select('*')->where('status',1)->where('deleted',0)->where('type','news')->get();
-        // $blogs=Page::select('*')->where('status',1)->where('deleted',0)->where('type','blog')->get();
-        // return $pages;
-        return view('detailspage');
+        $page=Page::select('*')->where('id',$id)->first();
+        $news=Page::select('*')->where('status',1)->where('deleted',0)->where('type','news')->get();
+        $blogs=Page::select('*')->where('status',1)->where('deleted',0)->where('type','blog')->get();
+        return view('detailspage',compact('page','news','blogs'));
 
     }
 }

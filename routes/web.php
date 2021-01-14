@@ -20,13 +20,13 @@ use App\Page;
 
 
 Route::get('/', 'HomePage@index')->name('homePage');
-Route::get('detailspage', 'HomePage@Details')->name('detailspage3');
-Route::get('detailspage/{id}', function ($id) {
-    $pages=Page::select('*')->where('id',$id)->first();
-        $news=Page::select('*')->where('status',1)->where('deleted',0)->where('type','news')->get();
-        $blogs=Page::select('*')->where('status',1)->where('deleted',0)->where('type','blog')->get();
-        return view('detailspage');
-})->name('detailspage2');;
+Route::get('detailspage{id}', 'HomePage@Details')->name('detailspage2');
+// Route::get('detailspage{id}', function ($id) {
+//     $pages=Page::select('*')->where('id',$id)->first();
+//         $news=Page::select('*')->where('status',1)->where('deleted',0)->where('type','news')->get();
+//         $blogs=Page::select('*')->where('status',1)->where('deleted',0)->where('type','blog')->get();
+//         return view('detailspage');
+// })->name('detailspage2');;
 
 
 Route::get('/home', 'HomeController@index')->name('home');
